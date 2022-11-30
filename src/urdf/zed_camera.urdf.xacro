@@ -109,7 +109,7 @@
             <image>
                 <width>752</width>
                 <height>480</height>
-                <format>R8G8B8</format>
+                <format>L8</format>		<!-- Sk R8G8B8-->
             </image>
             <clip>
                 <near>0.02</near>
@@ -124,7 +124,7 @@
             <image>
                 <width>752</width>
                 <height>480</height>
-                <format>R8G8B8</format>
+                <format>L8</format>			<!-- Sk R8G8B8-->
             </image>
             <clip>
                 <near>0.02</near>
@@ -139,7 +139,7 @@
             <imageTopicName>image_raw</imageTopicName>
             <cameraInfoTopicName>camera_info</cameraInfoTopicName>
             <frameName>left_camera_optical_frame_${numb}</frameName>
-            <!--<rightFrameName>right_camera_optical_frame</rightFrameName>-->
+            <!--<rightFrameName>right_camera_optical_frame_${numb}</rightFrameName>-->
             <hackBaseline>0.12</hackBaseline>
             <distortionK1>0.0</distortionK1>
             <distortionK2>0.0</distortionK2>

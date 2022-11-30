@@ -60,6 +60,10 @@ def callback(data):
 
 
 if __name__ == '__main__':
+
+    sub_topic = sys.argv[1]
+    pub_topic = sys.argv[2]
+    
     #Variable initialization
     global xAnt
     global yAnt
@@ -83,14 +87,14 @@ if __name__ == '__main__':
     if not (max_append > 0):
         rospy.logwarn('The parameter max_list_append not is correct')
         sys.exit()
-    pub = rospy.Publisher('ground_truth/path', Path, queue_size=1)
+    pub = rospy.Publisher(pub_topic, Path, queue_size=1)
 
 
     path = Path()
     msg = Odometry()
 
     #Subscription to the topic
-    msg = rospy.Subscriber('ground_truth/state', Odometry, callback)
+    msg = rospy.Subscriber(sub_topic, Odometry, callback)
 
     rate = rospy.Rate(30) # 30hz
 

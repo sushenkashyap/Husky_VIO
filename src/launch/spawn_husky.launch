@@ -79,5 +79,5 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
               -model husky
               -robot_namespace $(arg robot_namespace)" />
   </group>
-  <node name="odom2path_node" pkg="husky_vio" type="odom2path_node.py" output="screen"></node>
+  <!--<node name="odom2path_node" pkg="husky_vio" type="odom2path_node.py" output="screen"></node>-->		<!--SK-->
 </launch>
