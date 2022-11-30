@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # mini_project_kokas
 
 Goal of this project is the modelling of the argos quadruped robot using champ setup assistant. Equipped with a stereo camera and by using gmapping ROS packages, argos can move and avoid obstacles. To avoid obstacles, packages that convert the images from the stereo camera to laserscan are used.
@@ -296,3 +297,9 @@ Launch teleop to move Husky:
 ```console
 rosrun key_teleop key_teleop.py key_vel:=cmd_vel
 ```
+=======
+# Husky_VIO
+Husky Gazebo Simulator for Visual Inertial Odometry
+
+Based on Husky robot by Clearpath Robotics: https://github.com/husky/husky
+>>>>>>> 1f4dfc643c43a612306ff0b265c40cbd2253ce3e
