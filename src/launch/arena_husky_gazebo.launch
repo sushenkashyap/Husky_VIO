@@ -92,6 +92,8 @@
                         <arg name="min_height"                  value="-0.5"/>
                 </include>
         </group>
+		
+		<node pkg="tf" type="static_transform_publisher" name="odom2world" args="0 0 0 0 0 0 1 /world /odom 100" />
 
 		<!-- SK
         <group if="$(arg disp_to_laser)">
